@@ -17,6 +17,12 @@ class Settings(BaseSettings):
     # Database Settings
     database_url: str = "sqlite:///email_agent.db"
 
+    # Redis MCP Settings
+    redis_host: str = "localhost"
+    redis_port: int = 6379
+    redis_password: Optional[str] = None
+    redis_db: int = 0
+
     # Application Settings
     log_level: str = "INFO"
     check_interval: int = 60  # seconds

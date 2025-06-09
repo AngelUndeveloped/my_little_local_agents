@@ -1,0 +1,33 @@
+# Core dependencies
+langchain>=0.1.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Gmail API
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.0.0
+
+# LLM dependencies
+google-generativeai>=0.3.0  # For Gemini
+langchain-google-genai>=0.0.5  # For Gemini integration with LangChain
+
+# Database
+sqlalchemy>=2.0.0
+alembic>=1.12.0  # For database migrations
+
+# MCP Server
+redis>=5.0.0
+rq>=1.15.0  # Redis Queue for job processing
+huey>=2.4.0  # Alternative to RQ if needed
+
+# Utilities
+python-dateutil>=2.8.2
+requests>=2.31.0
+tenacity>=8.2.0  # For retrying failed operations
+
+# Development dependencies
+pytest>=7.4.0
+black>=23.7.0
+flake8>=6.1.0
+mypy>=1.5.0
